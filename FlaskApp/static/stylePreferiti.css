@@ -1,0 +1,1311 @@
+[data-theme="light"]
+
+/* giorno */
+    {
+    --colore-sfondo-body: #fdffe9;
+    /* Giallo chiaro */
+    --colore-testo-body: #000000;
+    /* Nero */
+    --colore-sfondo-navbar: #004d40;
+    /* Verde scuro */
+    --colore-testo-navbar: #ffffff;
+    /* Bianco */
+    --colore-testo-navbar-hover: #20bb63;
+    /* Azzurro chiaro */
+    --colore-testo-commercialista: #000000;
+    /* Nero */
+    --colore-bordo-commercialista: #cccccc;
+    /* Grigio chiaro */
+    --colore-sfondo-commercialista: #ffffff;
+    /* Bianco */
+    --colore-testo-commercialista-hover: #004d40;
+    --colore-sfondo-tabulator-header: #004d40;
+    /* Verde scuro */
+    --colore-testo-tabulator-header: #ffffff;
+    /* Bianco */
+    --colore-sfondo-tabulator-row: #edffc8;
+    /* Verde chiaro */
+    --colore-testo-tabulator-row: #004d40;
+    /* Verde scuro */
+    --colore-sfondo-tabulator-row-even: #e0f2f1;
+    /* Azzurro chiaro */
+    --colore-sfondo-tabulator-page: #004d40;
+    /* Verde scuro */
+    --colore-testo-tabulator-page: #ffffff;
+    /* Bianco */
+    --colore-sfondo-tabulator-page-active: #ffffff;
+    /* Bianco */
+    --colore-testo-tabulator-page-active: #000000;
+    /* Nero */
+    --colore-testo-tabulator-page-disabled: #ffffff80;
+    /* Bianco trasparente */
+    --colore-sfondo-tabulator-page-hover: #00947b;
+    --colore-sfondo-tabulator-page-disabled: #536663;
+    --colore-bordo-form-control-focus: #cccccc;
+    /* Grigio chiaro */
+    --colore-ombra-form-control-focus: #cccccc;
+    /* Grigio chiaro */
+    --colore-sfondo-input-search: #004d40;
+    /* Verde scuro */
+    --colore-testo-input-search: #ffffff;
+    /* Giallo chiaro */
+    --colore-placeholder-input-search: #fdffe9;
+    /* Giallo chiaro */
+    --colore-sfondo-btn-primary: #004d40;
+    /* Verde scuro */
+    --colore-bordo-btn-primary: #004d40;
+    /* Verde scuro */
+    --colore-testo-btn-primary: #ffffff;
+    /* Azzurro chiaro */
+    --colore-sfondo-btn-primary-hover: #00695c;
+    /* Verde acqua */
+    --colore-bordo-btn-primary-hover: #00695c;
+    /* Verde acqua */
+    --colore-sfondo-btn-secondary: #00695c;
+    /* Verde acqua */
+    --colore-bordo-btn-secondary: #00695c;
+    /* Verde acqua */
+    --colore-testo-btn-secondary: #ffffff;
+    /* Bianco */
+    --colore-bordo-btn-secondary-hover: #004d40;
+    /* Aggiunta variabile per il bordo del pulsante secondario in hover */
+    --colore-testo-btn-secondary-active: #e0e0e0;
+    /* Aggiunta variabile per il testo del pulsante secondario attivo */
+    --colore-sfondo-dropdown-menu: #fdffe9;
+    /* Giallo chiaro */
+    --colore-bordo-dropdown-menu: #00695c;
+    /* Verde acqua */
+    --colore-testo-dropdown-item: #004d40;
+    /* Verde scuro */
+    --colore-sfondo-dropdown-item-selected: #004d40;
+    /* Verde scuro */
+    --colore-testo-dropdown-item-selected: #ffffff;
+    /* Bianco */
+    --colore-sfondo-dropdown-item-hover: #00695c;
+    /* Verde acqua */
+    --colore-testo-dropdown-item-hover: #ffffff;
+    /* Bianco */
+    --colore-sfondo-dropdown-toggle: #004d40;
+    /* Verde scuro */
+    --colore-testo-dropdown-toggle: #ffffff;
+    /* Giallo chiaro */
+    --colore-bordo-dropdown-toggle: #004d40;
+    /* Aggiunta variabile per il bordo del dropdown toggle */
+    --colore-testo-nessuno-studio: #000000;
+    --colore-evidenziazine-testo: #ffff00;
+    --colore-sfondo-footer: #004d40;
+    --colore-testo-footer-hover: #4CAF50;
+}
+
+[data-theme="dark"]
+
+/* notte */
+    {
+    --colore-sfondo-body: #343a40;
+    /* Grigio scuro */
+    --colore-testo-body: #ffffff;
+    /* Quasi bianco */
+    --colore-sfondo-navbar: #00332d;
+    /* Verde molto scuro */
+    --colore-testo-navbar: #e0e0e0;
+    /* Bianco sporco */
+    --colore-testo-navbar-hover: #009e64;
+    /* Blu grigio scuro */
+    --colore-testo-commercialista: #ffffff;
+    /* Quasi bianco */
+    --colore-bordo-commercialista: #555555;
+    /* Grigio medio */
+    --colore-sfondo-commercialista: #000000;
+    /* Bianco sporco */
+    --colore-testo-commercialista-hover: #009e64;
+    --colore-sfondo-tabulator-header: #00332d;
+    /* Verde scuro */
+    --colore-testo-tabulator-header: #e0e0e0;
+    /* Bianco sporco */
+    --colore-sfondo-tabulator-row: #193300;
+    /* Verde molto scuro */
+    --colore-testo-tabulator-row: #009e64;
+    /* Verde scuro */
+    --colore-sfondo-tabulator-row-even: #37474f;
+    /* Blu grigio scuro */
+    --colore-sfondo-tabulator-page: #00332d;
+    /* Verde scuro */
+    --colore-testo-tabulator-page: #ffffff;
+    /* Quasi bianco */
+    --colore-sfondo-tabulator-page-active: #e0e0e0;
+    /* Bianco sporco */
+    --colore-testo-tabulator-page-active: #000000;
+    /* Quasi bianco */
+    --colore-testo-tabulator-page-disabled: #ffffff80;
+    /* Bianco trasparente */
+    --colore-sfondo-tabulator-page-hover: #006f62;
+    --colore-sfondo-tabulator-page-disabled: #3d6c64;
+    --colore-bordo-form-control-focus: #555555;
+    /* Grigio medio */
+    --colore-ombra-form-control-focus: #555555;
+    /* Grigio medio */
+    --colore-sfondo-input-search: #00332d;
+    /* Verde scuro */
+    --colore-testo-input-search: #ffffff;
+    /* Grigio scuro */
+    --colore-placeholder-input-search: #ffffff;
+    /* Grigio scuro */
+    --colore-sfondo-btn-primary: #00332d;
+    /* Verde scuro */
+    --colore-bordo-btn-primary: #00332d;
+    /* Verde scuro */
+    --colore-testo-btn-primary: #ffffff;
+    /* Blu grigio scuro */
+    --colore-sfondo-btn-primary-hover: #004d40;
+    /* Verde acqua scuro */
+    --colore-bordo-btn-primary-hover: #004d40;
+    /* Verde acqua scuro */
+    --colore-sfondo-btn-secondary: #004d40;
+    /* Verde acqua scuro */
+    --colore-bordo-btn-secondary: #004d40;
+    /* Verde acqua scuro */
+    --colore-testo-btn-secondary: #ffffff;
+    /* Bianco sporco */
+    --colore-bordo-btn-secondary-hover: #004d40;
+    /* Aggiunta variabile per il bordo del pulsante secondario in hover */
+    --colore-testo-btn-secondary-active: #e0e0e0;
+    /* Aggiunta variabile per il testo del pulsante secondario attivo */
+    --colore-sfondo-dropdown-menu: #343a40;
+    /* Grigio scuro */
+    --colore-bordo-dropdown-menu: #004d40;
+    /* Verde acqua scuro */
+    --colore-testo-dropdown-item: #ffffff;
+    /* Verde scuro */
+    --colore-sfondo-dropdown-item-selected: #004d40;
+    /* Verde scuro */
+    --colore-testo-dropdown-item-selected: #e0e0e0;
+    /* Bianco sporco */
+    --colore-sfondo-dropdown-item-hover: #004d40;
+    /* Verde acqua scuro */
+    --colore-testo-dropdown-item-hover: #e0e0e0;
+    /* Bianco sporco */
+    --colore-sfondo-dropdown-toggle: #00332d;
+    /* Verde scuro */
+    --colore-testo-dropdown-toggle: #ffffff;
+    /* Grigio scuro */
+    --colore-bordo-dropdown-toggle: #00332d;
+    /* Aggiunta variabile per il bordo del dropdown toggle */
+    --colore-testo-nessuno-studio: #ffffff;
+    --colore-evidenziazine-testo: #004d40;
+    --colore-sfondo-footer: #00332d;
+    --colore-testo-footer-hover: #009e64;
+}
+
+[lang="it"]
+
+/*italiano*/
+    {
+    --totaleRisultati: "Risultati per pagina";
+    --paginaProssima: "Prossimo";
+    --paginaPrecedente: "Precedente";
+    --ordinamento: "Ordina per";
+    --inizio: "Inizio";
+    --precedente: "Indietro";
+    --prossimo: "Prossimo";
+    --fine: "Fine";
+    --numeroTelefono: "Numero di telefono: "
+}
+
+[lang="en"]
+
+/*inglese*/
+    {
+    --totaleRisultati: "Entries per page";
+    --paginaProssima: "Next";
+    --paginaPrecedente: "Prev";
+    --ordinamento: "Order by";
+    --inizio: "First";
+    --precedente: "Prev";
+    --prossimo: "Next";
+    --fine: "Last";
+    --numeroTelefono: "Telephone number: ";
+}
+
+
+/*=============================================================================================================*/
+/*                                              Body e Navbar                                                  */
+/*=============================================================================================================*/
+body 
+{
+    background-color: var(--colore-sfondo-body);
+    color: var(--colore-testo-body);
+    transition: background-color 1s, color 1s;
+}
+
+.titolo
+{
+    margin-top: 100px;
+    text-align: center;
+    color: var(--colore-testo-body);
+    transition: color 1s;
+}
+
+.navbar {
+    background-color: var(--colore-sfondo-navbar);
+    transition: background-color 1s, padding 0.6s ease;
+    box-shadow: 0px 0px 10px 0px #000000;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 3;
+}
+
+.navbar-brand {
+    color: white;
+    pointer-events: none;
+}
+
+.nav-link {
+    color: white;
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.nav-link:hover {
+    color: var(--colore-testo-navbar-hover);
+    transition: color 1s, transform 0.4s ease;
+    transform: scale(1.1);
+}
+
+.nav-link.active {
+    color: var(--colore-testo-navbar-hover);
+}
+
+.navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-scroll {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: padding 0.6s ease, background-color 1s;
+}
+
+.navbar-collapse {
+    transition: 1s all;
+}
+
+li.nav-item {
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.dropdown-container {
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--colore-bordo-btn-primary);
+    transition: 1s all;
+}
+
+@media screen and (max-width: 1200px) {
+    li.nav-item {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .navbar-scroll {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: padding 0.6s ease, background-color 1s;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    li.nav-item {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .nav-link {
+        transition: color 0.4s ease;
+    }
+
+    .nav-link:hover {
+        color: var(--colore-testo-navbar-hover);
+        transition: color 1s;
+        transform: none;
+    }
+
+    .dropdown-container {
+        padding-bottom: 10px;
+    }
+}
+
+/*=============================================================================================================*/
+/*                                              Schermata Preloader                                            */
+/*=============================================================================================================*/
+.loader {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 25%, #bebe00);
+    position: relative;
+    animation: spin 2s linear infinite;
+    z-index: 10;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 50%;
+    background: #00332d;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Center the loader */
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    /* Cambia position a fixed per coprire tutta la viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    /* Assicurati che il loader sia sopra tutto */
+    background-color: #00332d;
+}
+
+.loader-dot {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #bebe00;
+    transform: translate(-50%, -50%);
+}
+
+/* Overlay di traduzione */
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.commercialista-container {
+    position: relative;
+    /* Necessario per posizionare l'overlay */
+}
+
+.loading-overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*=============================================================================================================*/
+/*                                          Scheda Studio Commercialista                                       */
+/*=============================================================================================================*/
+.contenitore-generale {
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.commercialista-link {
+    width: 80%;
+    display: inline-block;
+    margin-left: auto;
+    color: var(--colore-testo-commercialista);
+    transition: color 1s;
+}
+
+.commercialista-link:hover {
+    text-decoration: none;
+    color: var(--colore-testo-commercialista-hover);
+    transition: color 1s;
+}
+
+.commercialista-container {
+    display: flex;
+    border: 1px solid var(--colore-bordo-commercialista);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    background-color: var(--colore-sfondo-commercialista);
+    transition: background-color 1s;
+}
+
+.image {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.details .category,
+.details .address,
+.details .phone {
+    word-wrap: break-word;
+    /* Fa andare a capo il testo quando raggiunge il margine */
+    word-break: break-word;
+    /* Alternativa: forza la rottura delle parole al margine */
+    width: 100%;
+    /* Assicurati che l'elemento utilizzi tutto lo spazio disponibile */
+    display: block;
+    /* Imposta il display a block per garantire il comportamento di blocco */
+}
+
+.category {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.address,
+.description,
+.phone {
+    margin-bottom: 10px;
+}
+
+.phone::before {
+    content: var(--numeroTelefono);
+}
+
+
+/*=============================================================================================================*/
+/*                                              Tabella Tabulator                                              */
+/*=============================================================================================================*/
+.tabulator .tabulator-header .tabulator-col {
+    text-align: center;
+    background-color: var(--colore-sfondo-tabulator-header);
+    transition: background-color 1s;
+}
+
+.tabulator-row .tabulator-cell {
+    display: flex;
+}
+
+.tabulator-page {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: var(--colore-sfondo-tabulator-page);
+    color: var(--colore-testo-tabulator-page);
+    border: 1px solid #7e7e7e;
+}
+
+.tabulator-page:hover
+{
+    background-color: var(--colore-sfondo-tabulator-page-hover);
+}
+.tabulator-page[title="First Page"]
+{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.tabulator-page[title="Last Page"]
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tabulator-page.active {
+    background-color: var(--colore-sfondo-tabulator-page-active);
+    color: var(--colore-testo-tabulator-page-active);
+    transition: background-color 1s, color 1s;
+}
+
+.tabulator-page[disabled] {
+    color: var(--colore-testo-tabulator-page-disabled);
+    pointer-events: none;
+    background-color: var(--colore-sfondo-tabulator-page-disabled);
+    transition: all 1s;
+}
+
+
+.tabulator-col-title {
+    font-size: 20px;
+}
+
+.tabulator-col-sorter,
+.tabulator-arrow,
+.tabulator-col-resize-handle {
+    display: none;
+}
+
+.tabulator-row .tabulator-cell {
+    white-space: normal;
+}
+
+.tabulator .tabulator-header {
+    background-color: var(--colore-sfondo-tabulator-header) 1s all;
+    color: var(--colore-testo-tabulator-header);
+    transition: background-color 1s, color;
+}
+
+.tabulator .tabulator-row {
+    background-color: var(--colore-sfondo-tabulator-row);
+    color: var(--colore-testo-tabulator-row);
+    transition: background-color 1s, color 1s;
+}
+
+.tabulator .tabulator-row:nth-child(even) {
+    background-color: var(--colore-sfondo-tabulator-row-even);
+    transition: background-color 1s;
+}
+
+#commercialisti-table {
+    background-color: var(--colore-sfondo-commercialista);
+    transition: background-color 1s;
+    border-radius: 10px;
+}
+
+
+/*=============================================================================================================*/
+/*                                                 Ricerca Filtri                                              */
+/*=============================================================================================================*/
+.larghezzaFiltri {
+    width: 100%;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+.filtroinizio {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.filtroMezzo {
+    display: flex;
+    justify-content: center;
+}
+
+.filtroFine {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dt-length {
+    display: flex;
+    align-items: center;
+}
+
+.dt-layout-cell.dt-middle .dt-sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dt-layout-cell.dt-middle .dt-sort label {
+    margin-right: 5px;
+}
+
+.dt-layout-cell.dt-middle .form-control {
+    width: 200px;
+    display: inline-block;
+}
+
+.dt-container .dt-layout-row {
+    display: table;
+    clear: both;
+    width: 100%;
+}
+
+.dt-container .dt-layout-cell.dt-end {
+    text-align: left;
+}
+
+.dt-layout-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dt-layout-cell {
+    flex: 1;
+}
+
+.dt-start {
+    text-align: left;
+}
+
+.dt-middle {
+    text-align: center;
+}
+
+.dt-end {
+    text-align: right;
+}
+
+.form-control {
+    width: auto;
+    height: 38px;
+    display: inline-block;
+}
+
+.form-control:focus {
+    border-color: var(--colore-bordo-form-control-focus);
+    /* Colore del contorno */
+    box-shadow: 0 0 0 0.2rem var(--colore-ombra-form-control-focus);
+    /* Ombra del contorno */
+    transition: border-color 1s, box-shadow 1s;
+}
+
+.form-group {
+    margin-bottom: 0px;
+}
+
+.impaginazione {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.button[data-page="next"]::after {
+    content: var(--paginaProssima);
+}
+
+
+/*Risultati per pagina*/
+label[for="rowsPerPage"] {
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+
+label[for="rowsPerPage"]::after {
+    content: var(--totaleRisultati);
+}
+
+/*Ordina per*/
+label[for="dt-sort-0"]::after {
+    content: var(--ordinamento);
+}
+
+/*Impaginazione*/
+button[data-page="first"]::after {
+    content: var(--inizio);
+}
+
+button[data-page="prev"]::after {
+    content: var(--precedente);
+}
+
+button[data-page="next"]::after {
+    content: var(--prossimo);
+}
+
+button[data-page="last"]::after {
+    content: var(--fine);
+}
+
+/*Barra di ricerca*/
+/* Cambia colore del testo all'interno dell'input */
+input[type="search"].form-control {
+    background-color: var(--colore-sfondo-input-search);
+    /* Cambia il colore del testo all'interno dell'input */
+    color: var(--colore-testo-input-search);
+    border-color: #ffffff00;
+    transition: background-color 1s, color 1s;
+}
+
+/* Cambia il colore del placeholder */
+input[type="search"].form-control::placeholder {
+    color: var(--colore-placeholder-input-search);
+    /* Cambia il colore del placeholder */
+    opacity: 1;
+    /* Assicura che il colore del placeholder non sia trasparente */
+    transition: color 1s;
+}
+
+/* Per i browser WebKit (Chrome, Safari) */
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 15px;
+    /* Altezza della "x" */
+    width: 15px;
+    /* Larghezza della "x" */
+    background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22white%22%3E%3Cpath d=%22M18.3 5.7a1 1 0 00-1.4 0L12 10.6 7.1 5.7a1 1 0 10-1.4 1.4l4.9 4.9-4.9 4.9a1 1 0 001.4 1.4l4.9-4.9 4.9 4.9a1 1 0 001.4-1.4l-4.9-4.9 4.9-4.9a1 1 0 000-1.4z%22/%3E%3C/svg%3E');
+    background-size: 15px 15px;
+    /* Dimensioni della "x" */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Per Internet Explorer */
+input[type="search"]::-ms-clear {
+    display: none;
+}
+
+label[for="dt-sort-0"] {
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+.dt-search {
+    position: relative;
+    /* Necessario per posizionare l'icona all'interno del contenitore */
+    display: inline-block;
+    /* Assicura che il contenitore sia largo quanto l'input */
+}
+
+.search-icon {
+    position: absolute;
+    /* Posiziona l'icona assolutamente rispetto al contenitore */
+    top: 50%;
+    /* Centra verticalmente l'icona */
+    left: 10px;
+    /* Spostamento orizzontale dell'icona */
+    transform: translateY(-50%);
+    /* Centra verticalmente l'icona */
+    color: #ffffff;
+    /* Colore dell'icona */
+    pointer-events: none;
+    /* Rende l'icona non cliccabile */
+}
+
+#dt-search-0 {
+    padding-left: 30px;
+    /* Aggiunge spazio per l'icona */
+}
+
+.highlight {
+    background-color: var(--colore-evidenziazine-testo);
+    font-weight: bold;
+    transition: background-color 1s;
+}
+
+@media screen and (max-width: 1200px) {
+    .dt-layout-cell.dt-middle .form-control {
+        width: 165px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .larghezzaFiltri {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dt-layout-cell {
+        padding: 5px;
+    }
+}
+
+/*=============================================================================================================*/
+/*                                             Pulsanti e Dropdown                                             */
+/*=============================================================================================================*/
+.btn-primary {
+    background-color: var(--colore-sfondo-btn-primary);
+    border-color: var(--colore-bordo-btn-primary);
+    color: var(--colore-testo-btn-primary);
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+
+.btn-primary:hover {
+    background-color: var(--colore-sfondo-btn-primary-hover);
+    border-color: var(--colore-bordo-btn-primary-hover);
+    transition: background-color 1s, border-color 1s;
+}
+
+.btn-secondary {
+    background-color: var(--colore-sfondo-btn-secondary);
+    border-color: var(--colore-bordo-btn-secondary);
+    color: var(--colore-testo-btn-secondary);
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--colore-sfondo-btn-secondary);
+    border-color: var(--colore-bordo-btn-secondary-hover);
+    transition: background-color 1s, border-color 1s;
+}
+
+/* Modifica lo sfondo delle dropdown quando sono aperte */
+.dropdown.show .btn-secondary.dropdown-toggle {
+    background-color: var(--colore-sfondo-btn-secondary);
+    border-color: var(--colore-bordo-dropdown-toggle);
+    transition: background-color 1s, border-color 1s;
+}
+
+.btn-secondary.focus,
+.btn-secondary:focus {
+    background-color: var(--colore-sfondo-btn-secondary);
+    border-color: var(--colore-bordo-dropdown-toggle);
+    transition: background-color 1s, border-color 1s;
+}
+
+/* Sfondo delle dropdown tema e lingua */
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle {
+    color: var(--colore-testo-btn-secondary-active);
+    background-color: var(--colore-sfondo-btn-secondary);
+    border-color: var(--colore-bordo-dropdown-toggle);
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+
+.dropdown-menu {
+    background-color: var(--colore-sfondo-dropdown-menu);
+    border-color: var(--colore-bordo-dropdown-menu);
+    /* Cambia il colore del bordo */
+    border-width: 2px;
+    /* Opzionale: cambia lo spessore del bordo */
+    border-style: solid;
+    /* Opzionale: imposta lo stile del bordo */
+    transition: background-color 1s;
+}
+
+.dropdown-item {
+    padding: 0px;
+    text-align: center;
+    color: var(--colore-testo-dropdown-item);
+}
+
+.dropdown-item.selected {
+    background-color: var(--colore-sfondo-dropdown-item-selected);
+    /* Cambia con il colore desiderato */
+    color: var(--colore-testo-dropdown-item-selected);
+    /* Colore del testo quando selezionato */
+    transition: background-color 1s, color 1s;
+}
+
+.dropdown-item:hover {
+    background-color: var(--colore-sfondo-dropdown-item-hover);
+    color: var(--colore-testo-dropdown-item-hover);
+}
+
+.dropdown-toggle {
+    background-color: var(--colore-sfondo-dropdown-toggle);
+    color: var(--colore-testo-dropdown-toggle);
+    border: 1px solid var(--colore-bordo-dropdown-toggle);
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+
+
+
+.dropdown-menu.tema {
+    width: 100px;
+    min-width: 0px !important;
+}
+
+.dropdown-menu.lingua {
+    width: 125px;
+    min-width: 0px !important;
+}
+
+.dropdown-menu.tema .dropdown-item {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.dropdown-menu.lingua .dropdown-item {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#rowsPerPageDropdown
+
+/*lunghezza dropdown*/
+    {
+    width: 60px;
+}
+
+.dropdown-menu.rowsPerPage
+
+/*lunghezza opzioni dropdown*/
+    {
+    width: 60px;
+    min-width: 0px !important;
+}
+
+#sortDropdown
+
+/*lunghezza dropdown*/
+    {
+    width: 80px;
+}
+
+.dropdown-menu.sort
+
+/*lunghezza opzioni dropdown*/
+    {
+    width: 80px;
+    min-width: 0px !important;
+}
+
+#citiesDropdown
+
+/*lunghezza dropdown*/
+    {
+    width: 160px;
+    text-align: left;
+}
+
+.dropdown-menu.cities
+
+/*lunghezza opzioni dropdown*/
+    {
+    width: 160px;
+    min-width: 0px !important;
+}
+
+#citiesDropdown.dropdown-toggle::after
+
+/* freccia bianca a destra */
+    {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.dropdown-menu.utente {
+    width: 160px;
+    min-width: 0px !important;
+}
+
+.dropdown-menu.utente.show {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*=============================================================================================================*/
+/*                                         Preferiti, Mappa, Condividi                                                      */
+/*=============================================================================================================*/
+.remove {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(112, 112, 112);
+    font-size: 40px;
+}
+
+.remove:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgba(255, 0, 0, 0.5);
+    font-size: 40px;
+    transition: 0.3s all;
+}
+
+.remove.disabled {
+    color: rgb(255, 0, 0);
+    pointer-events: none;
+}
+
+.condividi {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(112, 112, 112);
+    font-size: 40px;
+}
+
+.condividi:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(0, 195, 255);
+    font-size: 40px;
+    transition: 0.3s all;
+}
+
+.vediSuMappa {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(112, 112, 112);
+    font-size: 40px;
+}
+
+.vediSuMappa:hover {
+    background-color: transparent;
+    border-color: transparent;
+    color: rgb(255, 0, 0);
+    font-size: 40px;
+    transition: 0.3s all;
+}
+
+.contenitore-opzioni {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .contenitore-opzioni {
+        justify-content: center;
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px;
+    border: 5px solid #4CAF50;
+}
+
+.popup.show {
+    display: block;
+}
+
+#popupTesto {
+    color: #000000;
+}
+
+#popupTesto2 {
+    color: #000000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.show {
+    display: block;
+}
+
+.buttonPreferito {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttonPreferito:hover 
+{
+    background-color: #40ec46;
+    transition: 0.3s all;
+}
+
+#NessunoStudio
+{
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    background-color: var(--colore-sfondo-body);
+    color: var(--colore-testo-nessuno-studio);
+    transition: all 1s;
+}
+
+.contenitorePulsantiDecisione
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*=============================================================================================================*/
+/*                                                  Icone                                                      */
+/*=============================================================================================================*/
+
+/*Resetta Password*/
+.material-symbols-outlined {
+    position: relative;
+    top: 5px
+}
+
+/*Sole*/
+.fa-sun {
+    color: orange;
+}
+
+.fa-sun::before {
+    content: '\f185';
+    /* Unicode for sun icon */
+    background: radial-gradient(circle at center, yellow, orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Luna*/
+.fa-moon {
+    color: #f0e68c;
+    /* light yellow */
+}
+
+
+/*=============================================================================================================*/
+/*                                                  Footer                                                     */
+/*=============================================================================================================*/
+
+footer {
+    background-color: var(--colore-sfondo-footer);
+    color: white;
+}
+
+footer a {
+    color: #dde0e5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colore-testo-footer-hover);
+    text-decoration: none;
+}
+
+footer .row>.col-md-6 {
+    margin-bottom: 15px;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+}
+
+/*=============================================================================================================*/
+/*                                   personalizzazzione pop up della condivisione                              */
+/*=============================================================================================================*/
+
+.custom-popup {
+    background-color: #f0f0f0;
+    /* Colore di sfondo personalizzato */
+    border-radius: 10px;
+    /* Angoli arrotondati */
+    padding: 20px;
+    /* Spaziatura interna */
+}
+
+.custom-title {
+    color: #333;
+    /* Colore del titolo */
+    font-size: 24px;
+    /* Dimensione del font del titolo */
+    margin-bottom: 20px;
+    /* Spaziatura sotto il titolo */
+}
+
+.custom-close-button {
+    color: #ff0000;
+    /* Colore del pulsante di chiusura */
+    font-size: 18px;
+    /* Dimensione del font del pulsante di chiusura */
+}
+
+.custom-confirm-button {
+    background-color: #007bff;
+    /* Colore di sfondo del pulsante di conferma */
+    color: #fff;
+    /* Colore del testo del pulsante di conferma */
+    border-radius: 5px;
+    /* Angoli arrotondati del pulsante */
+    padding: 10px 20px;
+    /* Spaziatura interna del pulsante */
+}
+
+.share-links a {
+    color: var(--colore-testo-body);
+    /* Colore dei link di condivisione */
+    text-decoration: none;
+    /* Rimuove la sottolineatura dai link */
+    font-weight: bold;
+    /* Rende il testo in grassetto */
+}
+
+.share-links a:hover {
+    /* text-decoration: underline; */
+    /* Sottolinea i link al passaggio del mouse */
+    color: #40ec46;
+}
+
+
+
+.swal2-title
+{
+    color: var(--colore-testo-body);
+}
+
+.swal2-popup.swal2-modal.swal2-show
+{
+    background-color: var(--colore-sfondo-body);
+    border: 5px solid #4CAF50;
+}
+.swal2-confirm.swal2-styled
+{
+    background-color: #4CAF50;
+}
+.swal2-confirm.swal2-styled:hover 
+{
+    background-color: #40ec46;
+}

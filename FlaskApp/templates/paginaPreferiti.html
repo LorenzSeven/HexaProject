@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="it">
+
+<head>
+    <script>
+        const tema = localStorage.getItem('theme');
+        if (tema != null) { document.documentElement.setAttribute('data-theme', tema); }
+        else if (tema == null) { localStorage.setItem('theme', "light"); }
+        const lingua = localStorage.getItem('language');
+        if (lingua != null) { document.documentElement.setAttribute('lang', lingua); }
+        else if (lingua == null) { localStorage.setItem('language', "it"); }   
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferiti</title>
+    <link rel="icon" type="image/png" href="../Immagini/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/tabulator-tables@5.0.7/dist/css/tabulator.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../static/stylePreferiti.css">
+</head>
+
+<body>
+
+    <!-- Elemento nascosto per l'ID utente -->
+    <input type="hidden" id="user-id" value="{{ user_id }}">
+
+    <!--Schermata Caricamento-->
+    <div class="loader-container" id="preloader">
+        <div class="loader">
+            <div class="loader-dot"></div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popupid">
+        <span id="popupTesto">Sicuro di rimuovere questo Studio dai Preferiti?</span>
+        <div class="contenitorePulsantiDecisione">
+            <button class="buttonPreferito" id="siButton">Si</button>
+            <button class="buttonPreferito" id="noButton">No</button>
+        </div>
+    </div>
+    <div class="popup" id="popupid2">
+        <span id="popupTesto2">Studio commercialista rimosso dai preferiti</span>
+        <div>
+            <button class="buttonPreferito" id="okButton">Okay</button>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../Immagini/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                HexaGroup Solutions
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-animated" href="" id="HexaprojectLoggato" title="Visualizza gli Studi Commercialisti"><i 
+                                class="fas fa-project-diagram"></i>
+                            HexaProject
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="Utente"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="zmdi zmdi-account"></i> <span id="nomeUtente"> Utente </span> 
+                            </button>
+                            <div class="dropdown-menu utente" aria-labelledby="Utente">
+                                <a class="dropdown-item" href="#" id="logout"> <i
+                                        class="fa-solid fa-right-from-bracket"></i> Logout </a>
+                                <a class="dropdown-item" href="#" id="resettaPassword"> <span
+                                        class="material-symbols-outlined"> sync_lock </span> <span
+                                        id="resettaPasswordTesto"> Resetta Password</span></a>
+                                <a class="dropdown-item" href="#" id="eliminaAccount"> <i
+                                        class="fa-solid fa-user-xmark"></i> <span id="eliminaAccountTesto"> Elimina
+                                        Account</span></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="dropdown-container">
+                    <div class="dropdown mr-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="themeDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-sun" id="themeIcon"></i>
+                        </button>
+                        <div class="dropdown-menu tema" aria-labelledby="themeDropdown">
+                            <a class="dropdown-item" href="#" onclick="temaChiaro()" id="lightTheme"><i
+                                    class="fas fa-sun"></i> <span id="temaChiaro"> Chiaro</span></a>
+                            <a class="dropdown-item" href="#" onclick="temaScuro()" id="darkTheme"><i
+                                    class="fas fa-moon"></i> <span id="temaScuro"> Scuro</span></a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="flag-icon flag-icon-it" id="languageIcon"></span>
+                        </button>
+                        <div class="dropdown-menu lingua" aria-labelledby="languageDropdown">
+                            <a class="dropdown-item" href="#" onclick="linguaItaliana()" id="italianLanguage"> <span
+                                    class="flag-icon flag-icon-it"></span> <span id="linguaIT"> Italiano</span></a>
+                            <a class="dropdown-item" href="#" onclick="linguaInglese()" id="englishLanguage"> <span
+                                    class="flag-icon flag-icon-gb"></span> <span id="linguaEN"> Inglese</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="titolo" id="PreferitiTitolo">Preferiti</h1>
+        <div class="dt-layout-row larghezzaFiltri">
+            <div class="dt-layout-cell dt-start filtroinizio">
+                <div class="dt-length">
+                    <label for="rowsPerPage"></label>
+                    <div class="dropdown" id="dropdown-page">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="rowsPerPageDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            10
+                        </button>
+                        <div class="dropdown-menu rowsPerPage" aria-labelledby="rowsPerPageDropdown">
+                            <a class="dropdown-item selected" href="#" data-value="10">10</a>
+                            <a class="dropdown-item" href="#" data-value="25">25</a>
+                            <a class="dropdown-item" href="#" data-value="50">50</a>
+                            <a class="dropdown-item" href="#" data-value="100">100</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dt-layout-cell dt-middle filtroMezzo">
+                <div class="dt-sort">
+                    <label for="dt-sort-0"></label>
+                    <div class="dropdown" id="dropdown-sort">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="sortDropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            A - Z
+                        </button>
+                        <div class="dropdown-menu sort">
+                            <a class="dropdown-item selected" href="#" data-value="az">A - Z</a>
+                            <a class="dropdown-item" href="#" data-value="za">Z - A</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dt-layout-cell dt-middle filtroMezzo">
+                <div class="dt-search">
+                    <label for="dt-search-0"></label>
+                    <i class="fas fa-search search-icon"></i>
+                    <input class="form-control" id="dt-search-0" type="search" placeholder="Cerca..."
+                        aria-label="default input example">
+                </div>
+            </div>
+            <div class="dt-layout-cell dt-end filtroFine">
+                <div class="dropdown" id="dropdown-cities">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="citiesDropdown"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tutte le città
+                    </button>
+                    <div class="dropdown-menu cities" aria-labelledby="citiesDropdown">
+                        <a class="dropdown-item selected" href="#" data-value="">Tutte le città</a>
+                        <a class="dropdown-item" href="#" data-value="(BG)">Bergamo (BG)</a>
+                        <a class="dropdown-item" href="#" data-value="(BS)">Brescia (BS)</a>
+                        <a class="dropdown-item" href="#" data-value="(CO)">Como (CO)</a>
+                        <a class="dropdown-item" href="#" data-value="(CR)">Cremona (CR)</a>
+                        <a class="dropdown-item" href="#" data-value="(LC)">Lecco (LC)</a>
+                        <a class="dropdown-item" href="#" data-value="(LO)">Lodi (LO)</a>
+                        <a class="dropdown-item" href="#" data-value="(MN)">Mantova (MN)</a>
+                        <a class="dropdown-item" href="#" data-value="(MI)">Milano (MI)</a>
+                        <a class="dropdown-item" href="#" data-value="(MB)">Monza (MB)</a>
+                        <a class="dropdown-item" href="#" data-value="(PV)">Pavia (PV)</a>
+                        <a class="dropdown-item" href="#" data-value="(SO)">Sondrio (SO)</a>
+                        <a class="dropdown-item" href="#" data-value="(VA)">Varese (VA)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="commercialisti-table"></div>
+    </div>
+
+    <div class="dt-layout-row">
+        <div class="dt-layout-cell impaginazione">
+            <div class="dt-paging" id="commercialisti-paging"></div>
+        </div>
+    </div>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 id="contatti">Contatti</h5>
+                    <p>
+                        <span id="indirizzo">Indirizzo</span>: Via Pompei Leone, 2 <br />
+                        Milano, 200124 <br />
+                    </p>
+                    <p>
+                        Email: hexagroupsolutions37@gmail.com<br />
+                        <span id="telefono">Telefono</span>: +123456789<br />
+                        Fax: +123456789
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 id="social">Seguici sui Social</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.facebook.com/tuoaccount" target="_blank">
+                                <i class="fab fa-facebook-square"></i> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/tuoaccount" target="_blank">
+                                <i class="fab fa-twitter-square"></i> Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/tuoaccount" target="_blank">
+                                <i class="fab fa-instagram-square"></i> Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/tuoaccount" target="_blank">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="" id="HexaprojectLoggato2" title="Visualizza gli Studi Commercialisti"><i 
+                                    class="fas fa-project-diagram"></i>
+                                 HexaProject
+                            </a>
+                        </li>
+                        <li>
+                            <a href="indexHome.html">
+                                <i class="fas fa-home"></i> Home
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <p class="text-center">&copy; <span id="dirittiRiservati"> 2024 Hexa-group S.P.A. Tutti i diritti
+                    riservati.</span></p>
+            <p class="text-center" id="simulazioneAzienda"> Simulazione d'azienda, esercizio scolastico </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/tabulator-tables@5.0.7/dist/js/tabulator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="../static/scriptTemaLinguaPreferiti.js"></script>
+    <script src="../static/scriptPreferiti.js"></script>
+    <script src="../static/scriptRotte.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,562 @@
+[data-theme="light"] /* giorno */ 
+{
+    --colore-testo-body: #000000; /* Nero */
+    --colore-sfondo-navbar: #004d40; /* Verde scuro */
+    --colore-testo-navbar: #ffffff; /* Bianco */
+    --colore-testo-navbar-hover: #20bb63; /* Azzurro chiaro */
+    --colore-sfondo-btn-primary: #004d40; /* Verde scuro */
+    --colore-bordo-btn-primary: #004d40; /* Verde scuro */
+    --colore-testo-btn-primary: #ffffff; /* Azzurro chiaro */
+    --colore-sfondo-btn-primary-hover: #00695c; /* Verde acqua */
+    --colore-bordo-btn-primary-hover: #00695c; /* Verde acqua */
+    --colore-sfondo-btn-secondary: #00695c; /* Verde acqua */
+    --colore-bordo-btn-secondary: #00695c; /* Verde acqua */
+    --colore-testo-btn-secondary: #ffffff; /* Bianco */
+    --colore-bordo-btn-secondary-hover: #004d40; /* Aggiunta variabile per il bordo del pulsante secondario in hover */
+    --colore-testo-btn-secondary-active: #e0e0e0; /* Aggiunta variabile per il testo del pulsante secondario attivo */
+    --colore-sfondo-dropdown-menu: #fdffe9; /* Giallo chiaro */
+    --colore-bordo-dropdown-menu: #00695c; /* Verde acqua */
+    --colore-testo-dropdown-item: #004d40; /* Verde scuro */
+    --colore-sfondo-dropdown-item-selected: #004d40; /* Verde scuro */
+    --colore-testo-dropdown-item-selected: #ffffff; /* Bianco */
+    --colore-sfondo-dropdown-item-hover: #00695c; /* Verde acqua */
+    --colore-testo-dropdown-item-hover: #ffffff; /* Bianco */
+    --colore-sfondo-dropdown-toggle: #004d40; /* Verde scuro */
+    --colore-testo-dropdown-toggle: #ffffff; /* Giallo chiaro */
+    --colore-bordo-dropdown-toggle: #004d40; /* Aggiunta variabile per il bordo del dropdown toggle */
+    --colore-testo-label: #000000;
+    --colore-sfondo-riquadro-login: #fdffe9;
+    --colore-bordo-riquadro-login: #004d40;
+    --colore-icona-guarda-password: invert(0%); /*nero*/
+    --colore-testo-login: #000000;
+    --colore-testo-input-login: #000000;    
+    --colore-sfondo-pulsante-login: #004d40;
+    --colore-sfondo-pulsante-login-hover: #00695c;
+    --colore-sfondo-footer: #004d40;
+    --colore-testo-footer-hover: #20bb63;
+    --visibileGiorno: 1;
+    --visibileNotte: 0;
+}
+
+[data-theme="dark"] /* notte */ 
+{
+    --colore-testo-body: #ffffff; /* Quasi bianco */
+    --colore-sfondo-navbar: #00332d; /* Verde molto scuro */
+    --colore-testo-navbar: #ffffff; /* Bianco sporco */
+    --colore-testo-navbar-hover: #009e64; /* Blu grigio scuro */
+    --colore-sfondo-btn-primary: #00332d; /* Verde scuro */
+    --colore-bordo-btn-primary: #00332d; /* Verde scuro */
+    --colore-testo-btn-primary: #ffffff; /* Blu grigio scuro */
+    --colore-sfondo-btn-primary-hover: #004d40; /* Verde acqua scuro */
+    --colore-bordo-btn-primary-hover: #004d40; /* Verde acqua scuro */
+    --colore-sfondo-btn-secondary: #004d40; /* Verde acqua scuro */
+    --colore-bordo-btn-secondary: #004d40; /* Verde acqua scuro */
+    --colore-testo-btn-secondary: #ffffff; /* Bianco sporco */
+    --colore-bordo-btn-secondary-hover: #004d40; /* Aggiunta variabile per il bordo del pulsante secondario in hover */
+    --colore-testo-btn-secondary-active: #e0e0e0; /* Aggiunta variabile per il testo del pulsante secondario attivo */
+    --colore-sfondo-dropdown-menu: #343a40; /* Grigio scuro */
+    --colore-bordo-dropdown-menu: #004d40; /* Verde acqua scuro */
+    --colore-testo-dropdown-item: #ffffff; /* Verde scuro */
+    --colore-sfondo-dropdown-item-selected: #004d40; /* Verde scuro */
+    --colore-testo-dropdown-item-selected: #e0e0e0; /* Bianco sporco */
+    --colore-sfondo-dropdown-item-hover: #004d40; /* Verde acqua scuro */
+    --colore-testo-dropdown-item-hover: #e0e0e0; /* Bianco sporco */
+    --colore-sfondo-dropdown-toggle: #00332d; /* Verde scuro */
+    --colore-testo-dropdown-toggle: #ffffff; /* Grigio scuro */
+    --colore-bordo-dropdown-toggle: #00332d; /* Aggiunta variabile per il bordo del dropdown toggle */
+    --colore-testo-label: #ffffff;
+    --colore-sfondo-riquadro-login: #343a40;
+    --colore-bordo-riquadro-login: #00332d;
+    --colore-sfondo-pulsante-login: #00332d;
+    --colore-testo-input-login: #ffffff;
+    --colore-icona-guarda-password: invert(100%); /*bianco*/
+    --colore-testo-login: #ffffff;
+    --colore-sfondo-pulsante-login-hover: #004d40;
+    --colore-sfondo-footer: #00332d;
+    --colore-testo-footer-hover: #009e64;
+    --visibileGiorno: 0;
+    --visibileNotte: 1;
+}
+
+/*=============================================================================================================*/
+/*                                              Body e Navbar                                                  */
+/*=============================================================================================================*/
+html, body
+{
+    height: auto;
+}
+
+body 
+{
+    color: var(--colore-testo-body);
+    z-index: 1;
+}
+
+.sfondoGiorno
+{
+    background: linear-gradient(225deg, #f0f7a8, #6dbb20);
+    width:100%;
+    height:100%;
+    position: fixed;
+    top: 0px;
+    opacity: var(--visibileGiorno);
+    transition: all 1s;
+    z-index: -1;
+}
+
+.sfondoNotte
+{
+    background: linear-gradient(225deg, #575847, #004d40);
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: var(--visibileNotte);
+    transition: all 1s;
+    z-index: -1;
+}
+.navbar 
+{
+    background-color: var(--colore-sfondo-navbar);
+    transition: background-color 1s, padding 0.6s ease;
+    box-shadow: 0px 0px 10px 0px #000000;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 3;    
+}
+
+.navbar-brand
+{
+    color: white;
+    pointer-events: none;    
+}
+
+.nav-link 
+{
+    color: white;
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.nav-link:hover 
+{
+    color: var(--colore-testo-navbar-hover);
+    transition: color 1s, transform 0.4s ease;
+    transform: scale(1.1);
+}
+
+.nav-link.active 
+{
+    color: var(--colore-testo-navbar-hover);
+}
+.navbar-toggler
+{
+    border: 1px solid white;
+}
+
+.navbar-toggler-icon 
+{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-scroll 
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: padding 0.6s ease, background-color 1s;
+}
+.navbar-collapse
+{
+    transition: 1s all;
+}
+li.nav-item 
+{
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.dropdown-container
+{
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--colore-bordo-btn-primary);
+    transition: 1s all;
+}
+
+@media screen and (max-width: 1200px)
+{
+    li.nav-item 
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .navbar-scroll 
+    {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: padding 0.6s ease, background-color 1s;
+    }
+}
+
+@media screen and (max-width: 992px)
+{
+    li.nav-item 
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+        padding-top: 3px;
+        padding-bottom: 3px;        
+    }
+    .nav-link 
+    {
+        transition: color 0.4s ease;
+    }
+    
+    .nav-link:hover 
+    {
+        color: var(--colore-testo-navbar-hover);
+        transition: color 1s;
+        transform: none;
+    }
+
+    .dropdown-container
+    {
+        padding-bottom: 10px;
+    }
+}
+
+
+/*=============================================================================================================*/
+/*                                              Riquadro Login                                                 */
+/*=============================================================================================================*/
+
+.container-login100 {
+    background-color: #00000000;
+    padding: 30px;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+}
+
+.wrap-login100 {
+    border: 5px solid var(--colore-bordo-riquadro-login);
+    background-color: var(--colore-sfondo-riquadro-login);
+    transition: 1s all;
+}
+.wrap-login100-form-btn
+{
+    box-shadow: none; /* Rimuove l'ombra dal pulsante */
+}
+.login100-form-btn 
+{
+    background-color: var(--colore-sfondo-pulsante-login);
+    transition: background-color 1s;
+}
+
+.login100-form-btn:hover
+{
+    background-color: var(--colore-sfondo-pulsante-login-hover);
+}
+.login100-form-bgbtn {
+    display: none;
+}
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.label-input100
+{
+    color: var(--colore-testo-label);
+    transition: 1s all;
+}
+
+.label-input100::before, .label-input100::after 
+{
+    color: #20bb63 !important;
+}
+
+.wrap-input100.input100-focus .focus-input100::before, .wrap-input100.input100-focus .focus-input100::after 
+{
+    color: #20bb63 !important;
+}
+.has-val.input100+.focus-input100::after
+{
+    color: #20bb63;
+}
+.input100
+{
+    color: var(--colore-testo-input-login);
+    transition: color 1s;
+}
+.input100-focus
+{
+    color: var(--colore-testo-input-login);
+}
+.wrap-login100-form-btn
+{
+    z-index: 0;
+}
+.testoLogin a
+{
+    color: var(--colore-testo-login);
+}
+.testoLogin a:hover
+{
+    color: #20bb63;
+}
+/*=============================================================================================================*/
+/*                                             Pulsanti e Dropdown                                             */
+/*=============================================================================================================*/
+.btn-primary {
+    background-color: var(--colore-sfondo-btn-primary);
+    border-color: var(--colore-bordo-btn-primary);
+    color: var(--colore-testo-btn-primary);
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+
+.btn-primary:hover {
+    background-color: var(--colore-sfondo-btn-primary-hover);
+    border-color: var(--colore-bordo-btn-primary-hover);
+    transition: background-color 1s, border-color 1s;
+}
+
+.btn-secondary {
+    background-color: var(--colore-sfondo-btn-secondary);
+    border-color: var(--colore-bordo-btn-secondary);
+    color: var(--colore-testo-btn-secondary);
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--colore-sfondo-btn-secondary);
+    border-color: var(--colore-bordo-btn-secondary-hover);
+    transition: background-color 1s, border-color 1s;
+}
+
+/* Modifica lo sfondo delle dropdown quando sono aperte */
+.dropdown.show .btn-secondary.dropdown-toggle {
+    background-color: var(--colore-sfondo-btn-secondary);
+    border-color: var(--colore-bordo-dropdown-toggle);
+    transition: background-color 1s, border-color 1s;
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+    background-color: var(--colore-sfondo-btn-secondary);
+    border-color: var(--colore-bordo-dropdown-toggle);
+    transition: background-color 1s, border-color 1s;
+}
+
+/* Sfondo delle dropdown tema e lingua */
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn-secondary:not(:disabled):not(.disabled):active, 
+.show>.btn-secondary.dropdown-toggle {
+    color: var(--colore-testo-btn-secondary-active);
+    background-color: var(--colore-sfondo-btn-secondary);
+    border-color: var(--colore-bordo-dropdown-toggle);
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+.dropdown-menu 
+{
+    background-color: var(--colore-sfondo-dropdown-menu);
+    border-color: var(--colore-bordo-dropdown-menu); /* Cambia il colore del bordo */
+    border-width: 2px; /* Opzionale: cambia lo spessore del bordo */
+    border-style: solid; /* Opzionale: imposta lo stile del bordo */
+    transition: background-color 1s, border-color 1s;
+}
+.dropdown-item
+{
+    padding: 0px;
+    text-align: center;
+    color: var(--colore-testo-dropdown-item);
+}
+.dropdown-item.selected 
+{
+    background-color: var(--colore-sfondo-dropdown-item-selected); /* Cambia con il colore desiderato */
+    color: var(--colore-testo-dropdown-item-selected); /* Colore del testo quando selezionato */
+    transition: background-color 1s, color 1s;
+}
+.dropdown-item:hover
+{
+    background-color: var(--colore-sfondo-dropdown-item-hover);
+    color: var(--colore-testo-dropdown-item-hover);
+}
+.dropdown-toggle 
+{
+    background-color: var(--colore-sfondo-dropdown-toggle);
+    color: var(--colore-testo-dropdown-toggle);
+    border: 1px solid var(--colore-bordo-dropdown-toggle);
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 1s, border-color 1s, color 1s;
+}
+
+
+
+.dropdown-menu.tema
+{
+    width: 100px;
+    min-width: 0px !important;
+}
+.dropdown-menu.lingua
+{
+    width: 125px;
+    min-width: 0px !important;
+}
+.dropdown-menu.tema .dropdown-item
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.dropdown-menu.lingua .dropdown-item
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+/*=============================================================================================================*/
+/*                                              Schermata Preloader                                            */
+/*=============================================================================================================*/
+.loader 
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 25%, #bebe00);
+    position: relative;
+    animation: spin 2s linear infinite;
+    z-index: 10;
+}
+
+.loader::before 
+{
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border-radius: 50%;
+    background: #00332d;
+}
+
+@keyframes spin 
+{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Center the loader */
+.loader-container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed; /* Cambia position a fixed per coprire tutta la viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Assicurati che il loader sia sopra tutto */
+    background-color: #00332d;
+}
+.loader-dot 
+{
+  content: '';
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #bebe00;
+  transform: translate(-50%, -50%);
+}
+/* Overlay di traduzione */
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.loading-overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*=============================================================================================================*/
+/*                                                  Icone                                                      */
+/*=============================================================================================================*/
+/*dal sito https://zavoloklom.github.io/material-design-iconic-font/icons.html*/
+/*icona lucchetto: lock*/
+/*icona utente: account*/
+
+/*Vedi password*/
+::-ms-reveal 
+{
+    filter: var(--colore-icona-guarda-password);
+}
+
+/*Sole*/
+.fa-sun {
+    color: orange;
+}
+.fa-sun::before {
+    content: '\f185'; /* Unicode for sun icon */
+    background: radial-gradient(circle at center, yellow, orange);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Luna*/
+.fa-moon {
+    color: #f0e68c; /* light yellow */
+}
+/*=============================================================================================================*/
+/*                                                  Footer                                                     */
+/*=============================================================================================================*/
+
+footer {
+    background-color: var(--colore-sfondo-footer);
+    color: white;
+}
+
+footer p {
+    color: #dde0e5;
+}
+
+footer a {
+    color: #dde0e5;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--colore-testo-footer-hover);
+    text-decoration: none;
+}
+
+footer .row > .col-md-6 {
+    margin-bottom: 15px;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+}
+footer #simulazioneAzienda
+{
+    margin-top: 15px;
+}
